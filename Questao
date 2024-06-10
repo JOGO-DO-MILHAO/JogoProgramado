@@ -1,3 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.jogodomilhao;
+
+/**
+ *
+ * @author 324149373
+ */
 import java.util.*;
 public class Questao {
     
@@ -6,7 +16,7 @@ public class Questao {
    * @param contador esse parametro inumera as questoes de ate 10
    * @param <Alternativa> este ArrayList Onde as alternativas são aramzenadas 
    * @param enunciado onde fica o enuciado da queastao
-   * @return int o resultado deste método é a soma dos dois números.
+   * 
    */
  
     private String enunciado;
@@ -36,7 +46,7 @@ public class Questao {
         alternativas.add(alternativa);
     }
     /**
-     * Transcreva as aletern ativas usando A , B ,C ,D
+     * Transcreva as aleternativa ativas usando A , B ,C ,D
      * @return toString retora questao os contadores e usa 
      */
     @Override
