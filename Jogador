@@ -1,0 +1,58 @@
+import java.util.*;
+public class Jogador {
+    
+      Scanner ler = new Scanner(System.in);
+    
+    protected String nome;
+    protected String nickName;
+    protected boolean nomeErrado;
+    
+    public Jogador(String nome, String nickName, boolean nomeErrado){
+        this.nome = nome;
+        this.nickName = nickName;
+        this.nomeErrado = nomeErrado;
+    }
+    @Override
+    public String toString(){
+      return "Nome: " + this.nome  + " NickName: " + this.nickName ;
+    }
+           
+    public String getNome(){
+        return nome;
+    }
+    
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    
+    public String getNickmame(){
+        return nickName;
+    }
+     
+    public void setApelido(String nickName){
+        this.nickName = nickName;
+    }
+    
+    public boolean isNomeErrado(){
+        return nomeErrado;
+    }
+
+    public void setNomeErrado(boolean nomeErrado){
+        this.nomeErrado = nomeErrado;
+    }
+
+    public void verificarNomeErrado() {
+        while (nomeErrado) {
+            System.out.println("Digite seu nome : ");
+            nome = ler.nextLine();
+            System.out.println("Digite seu apelido : ");
+            nickName = ler.nextLine();
+            System.out.println("Tem certeza que seu nome/apelido está correto?");
+            String lerResposta = ler.nextLine();
+            if (lerResposta.equalsIgnoreCase("Sim")) {
+                nomeErrado = false;
+            }
+        }
+    }
+    
+}
