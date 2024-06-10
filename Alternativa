@@ -1,3 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.jogodomilhao;
+
+/**
+ *
+ * @author 324149373
+ */
 public class Alternativa {
      
         
@@ -14,20 +24,37 @@ public class Alternativa {
      public String getAlternativas(){
              
          return alternativas;
+         /**
+          * Método getAlternativas
+          * @return String de alternativas
+          */
         }
      
      public void setAlternativas(String alternativas){
      this.alternativas = alternativas;
+        /**
+         *  Método setAlternativas 
+         * @param String  alternativas  , ou seja s opções.
+         */
         }
       public boolean isCorreta() {
         return correta;
+        /**
+         * isCorreta
+         * @return a resposta correta.
+         */
     }
         @Override 
         public String toString(){
             return alternativas;
+            /**
+             * Metodo toString 
+             * @return as alternativas transcrevidas.
+             */
             
         }
         
     
     }
     
+
