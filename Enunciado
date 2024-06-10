@@ -1,0 +1,16 @@
+public class Enunciado {
+    
+    protected String enunciado;
+    
+    public Enunciado(String enunciado){
+        this.enunciado = enunciado;
+    }
+    public String getEnuciado() {
+        return enunciado;
+    }
+    public void setEnuciado(String enunciado){
+        this.enunciado = enunciado;
+    }
+    
+    
+}
