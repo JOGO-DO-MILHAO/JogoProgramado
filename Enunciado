@@ -1,15 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.jogodomilhao;
+
+/**
+ *
+ * @author 324149373
+ */
 public class Enunciado {
-    
+    /**
+     * Classe que  cria o enunciado
+     * return Obejto enunciado
+     * 
+     */
     protected String enunciado;
     
     public Enunciado(String enunciado){
         this.enunciado = enunciado;
+        /**
+         * Método construtor usando sobrecarga
+         * 
+         */
     }
     public String getEnuciado() {
         return enunciado;
+        /**
+     * Método getEnuciado.
+     * @return String  Retorna o enunciado
+     */
     }
     public void setEnuciado(String enunciado){
         this.enunciado = enunciado;
+        /**
+         * Método setEnuciado 
+         * @param setEnuciado defini as questões
+         *  
+         **/
     }
     
     
