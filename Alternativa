@@ -1,0 +1,33 @@
+public class Alternativa {
+     
+        
+       
+        protected boolean correta;
+        protected String alternativas;
+        
+        protected Alternativa( String alternativas, boolean correta){
+        this.correta = correta;
+        this.alternativas=alternativas;
+   
+        } 
+   
+     public String getAlternativas(){
+             
+         return alternativas;
+        }
+     
+     public void setAlternativas(String alternativas){
+     this.alternativas = alternativas;
+        }
+      public boolean isCorreta() {
+        return correta;
+    }
+        @Override 
+        public String toString(){
+            return alternativas;
+            
+        }
+        
+    
+    }
+    
