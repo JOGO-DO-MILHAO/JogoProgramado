@@ -9,15 +9,26 @@ package com.mycompany.jogodomilhao;
  * @author 324149373
  */
 import java.util.*;
+/**
+ *  Classe resposvael por criar o banco de questoões 
+ */
 public class BancoAlternativas {
     protected ArrayList<Questao> questoes;
 
     public BancoAlternativas() {
         this.questoes = new ArrayList<>();
         carregarQuestoes();
+        /**
+         * Metodo construtor 
+         */
     }
      public ArrayList<Questao> getQuestoes() {
         return questoes;
+        
+        /**
+         * Método getQuestoes
+         * @return um ArrayList de quetões 
+         */
     }
 
     public void carregarQuestoes() {
