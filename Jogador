@@ -1,5 +1,20 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.jogodomilhao;
+
+/**
+ *
+ * @author 324149373
+ */
 import java.util.*;
 public class Jogador {
+    /**
+     * Classe jogador.
+     * Cria um jogador
+     * 
+     */
     
       Scanner ler = new Scanner(System.in);
     
@@ -11,34 +26,67 @@ public class Jogador {
         this.nome = nome;
         this.nickName = nickName;
         this.nomeErrado = nomeErrado;
+        /**
+         * Método construtor com sobre carga
+         */
     }
     @Override
     public String toString(){
       return "Nome: " + this.nome  + " NickName: " + this.nickName ;
+      /**
+       * Método toString
+       * @return o nome e o nickname
+       */
     }
            
     public String getNome(){
         return nome;
+        /**
+         * Método getAlternativas
+         * @return String  retorna o nome 
+         */
     }
     
     public void setNome(String nome){
         this.nome = nome;
+        /**
+         * Método setNome
+         * @param String defini  o nome do jogador
+         * 
+         */
     }
     
     public String getNickmame(){
         return nickName;
+        /**
+         * Método getNickmame
+         * @return String  retorna o nickName 
+         */
     }
      
     public void setApelido(String nickName){
         this.nickName = nickName;
+        /**
+         * Método setNome
+         * @param String defini  o nickName do jogador
+         * 
+         */
     }
     
     public boolean isNomeErrado(){
         return nomeErrado;
+        /**
+         * Método isNomeErrado
+         * @return String  retorna uma verifcacao de nome do jogador
+         */
     }
 
     public void setNomeErrado(boolean nomeErrado){
         this.nomeErrado = nomeErrado;
+        /**
+         * Método setNomeErrado
+         * @param boolean define o nome errado
+         */
     }
 
     public void verificarNomeErrado() {
@@ -52,6 +100,13 @@ public class Jogador {
             if (lerResposta.equalsIgnoreCase("Sim")) {
                 nomeErrado = false;
             }
+       /**
+        * Método verificarNomeErrado
+        * verifica se o nome tá errado
+        * @return Sring nome 
+        * @return Srting apelido
+        * @return boolean Nome correto
+        */
         }
     }
     
