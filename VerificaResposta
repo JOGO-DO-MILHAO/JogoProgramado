@@ -1,0 +1,47 @@
+public class VerificaResposta {
+     protected int pontos ;
+     protected int tentativas;
+     protected int contTentativas;
+     
+     public  VerificaResposta (){
+     this.pontos = 0;
+    }
+    
+    public int getPontos(){
+    return pontos;
+    }
+    public void setPontos (int pontos){
+        this.pontos = pontos;
+    }
+    public int getTentativas(){
+        return tentativas;
+    }
+    public void setTentativas(int tentativas){
+        this.tentativas = tentativas;
+    }
+    public int getContTentativas(){
+        return contTentativas;
+    }
+    public void setContTentativas(int contTentativas){
+        this.contTentativas = contTentativas;
+    }
+    public void checarResposta(Alternativa effectveChoise , int tentativas ){
+        if(effectveChoise.isCorreta()){
+         
+            if (effectveChoise.isCorreta() && tentativas == 1){
+               System.out.println("Voce acertou de primeira !! , por isso voce ganhou 5 pontos");
+                pontos += 5;
+            }else if (effectveChoise.isCorreta()&&tentativas > 1){
+                System.out.println("Voce acertou na tentantiva " +tentativas);
+                pontos += 3;
+                pontos --;
+                contTentativas += tentativas;
+            }
+           
+            
+        } else{
+                System.out.println("Errrrou! tente novamente");
+            }
+        
+       }
+        
