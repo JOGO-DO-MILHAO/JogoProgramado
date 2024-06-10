@@ -1,0 +1,5 @@
+public class QuestaoFactory {
+    public static Questao criarQuestao(String enunciado , int contador ){
+         return new Questao(enunciado , contador );
+    }
+}
