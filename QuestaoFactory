@@ -1,3 +1,18 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.jogodomilhao;
+
+/**
+ *
+ * @author 324149373
+ */
+
+/**
+ * 
+ * QuestaoFactory Onde cria as questoes 
+ */
 public class QuestaoFactory {
     public static Questao criarQuestao(String enunciado , int contador ){
          return new Questao(enunciado , contador );
