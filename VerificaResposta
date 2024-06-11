@@ -1,32 +1,81 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.mycompany.jogodomilhao;
+
+/**
+ *
+ * @author 324149373
+ */
+
 public class VerificaResposta {
+   
+
      protected int pontos ;
      protected int tentativas;
      protected int contTentativas;
      
      public  VerificaResposta (){
      this.pontos = 0;
-    }
+     this.tentativas = 0;
+     /**
+    * Metodo que verifica as respostas , se elas estão certas ou erradas.
+    * @param pontos onde os pontos são gerados .
+    * @param tentativas tentativas do jogador.
+     * @param conTentativas onde as tentativas ficam salvas.
+     * 
+     */
+     
+     }
     
     public int getPontos(){
     return pontos;
+    /**
+     * Método getPontos. Retorna os pontos.
+     * @return int pontos que são feitos pelo jogador
+     */
     }
     public void setPontos (int pontos){
         this.pontos = pontos;
+        /**
+         * Método setPontos ele estabelce os pontos , ou seja verificardor.setPontos(0);  vai ficar com 0 pontos
+         *  
+         **/
     }
     public int getTentativas(){
         return tentativas;
+        /**
+     * Método getTentativas. Retorna os pontos.
+     * @return int tentativas que são as tentativas do jogador.
+     */
+        
     }
     public void setTentativas(int tentativas){
         this.tentativas = tentativas;
+         /**
+         * Método setTentativas ele estabelce as tentativas.
+         *  
+         **/
+        
     }
     public int getContTentativas(){
         return contTentativas;
+        /**
+     * Método getContTentativas. Retorna a quantidade de tentativas.
+     * @return int conta as tentativas do jogador.
+     */
     }
     public void setContTentativas(int contTentativas){
         this.contTentativas = contTentativas;
+         /**
+         * Método setContTentativas Conta as tentativas.
+         *  
+         **/
     }
     public void checarResposta(Alternativa effectveChoise , int tentativas ){
         if(effectveChoise.isCorreta()){
+         
          
             if (effectveChoise.isCorreta() && tentativas == 1){
                System.out.println("Voce acertou de primeira !! , por isso voce ganhou 5 pontos");
@@ -37,11 +86,23 @@ public class VerificaResposta {
                 pontos --;
                 contTentativas += tentativas;
             }
+            /**
+             * checarResposta checa se as repsotas
+             * @return  if (effectveChoise.isCorreta() && tentativas == 1) se voce acertar de primeira ,voce ganha 5 pontos.
+             * @return  else if (effectveChoise.isCorreta()&&tentativas > 1) se voce acetar de seunga voce ganha 3 pontos, que vão caindo
+             */
            
             
         } else{
                 System.out.println("Errrrou! tente novamente");
+                /**
+                 * Manda messagem de errou.
+                 * @return messangem ("Errrrou! tente novamente")
+                 */
             }
         
        }
         
+       
+    
+     }
